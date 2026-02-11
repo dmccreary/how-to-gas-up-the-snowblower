@@ -1,0 +1,61 @@
+{
+  "title": "Gas and Oil Mix Calculator",
+  "creator": "Dan McCreary",
+  "subject": "Small Engine Maintenance",
+  "description": "Interactive MicroSim to calculate two-cycle oil needed based on gas amount and mix ratio.",
+  "date": "2026-02-11",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Mechanical Systems",
+    "topic": "Two-cycle fuel mixing",
+    "learningObjectives": [
+      "Calculate oil volume needed for a given gas amount and mix ratio",
+      "Interpret gas-to-oil ratios such as 50:1",
+      "Convert the oil requirement into practical measurement units"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic ratio understanding",
+      "Familiarity with fluid measurements"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 480
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js CDN"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [
+      "How does oil required change as gas amount increases?",
+      "What happens to oil needed when the ratio shifts from 50:1 to 40:1?"
+    ],
+    "commonMisconceptions": [
+      "Confusing gas:oil ratios with oil:gas ratios",
+      "Assuming oil amount scales linearly without considering the ratio"
+    ],
+    "assessmentOpportunities": [
+      "Compute oil needed for three gas volumes using the default ratio",
+      "Explain why a lower ratio increases required oil"
+    ]
+  },
+  "chapter": ""
+}
