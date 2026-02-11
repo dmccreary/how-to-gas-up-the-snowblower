@@ -1,6 +1,14 @@
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen)](https://dmccreary.github.io/how-to-gas-up-the-snowblower/)
+[![Last Commit](https://img.shields.io/github/last-commit/dmccreary/how-to-gas-up-the-snowblower)](https://github.com/dmccreary/how-to-gas-up-the-snowblower/commits/main)
+[![Issues](https://img.shields.io/github/issues/dmccreary/how-to-gas-up-the-snowblower)](https://github.com/dmccreary/how-to-gas-up-the-snowblower/issues)
+[![Stars](https://img.shields.io/github/stars/dmccreary/how-to-gas-up-the-snowblower?style=social)](https://github.com/dmccreary/how-to-gas-up-the-snowblower/stargazers)
+[![Forks](https://img.shields.io/github/forks/dmccreary/how-to-gas-up-the-snowblower?style=social)](https://github.com/dmccreary/how-to-gas-up-the-snowblower/network/members)
+
 # How to Gas Up the Snowblower
 
 Interactive educational site and micro-simulator for mixing two-cycle gas and oil for small engines.
+
+Live site: https://dmccreary.github.io/how-to-gas-up-the-snowblower/
 
 ## What This Contains
 
