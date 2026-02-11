@@ -1,6 +1,6 @@
 # How to Gas Up the Snowblower
 
-This guide help you understand how to fill a two cycle snowblower with the
+This guide helps you understand how to fill a two cycle snowblower with the
 correct gas and oil mixture.
 
 ## Background
@@ -12,7 +12,7 @@ This guide shows you how to do this.
 
 ![](./img/gas-container.jpg)
 
-Here is the gas container.  Go to the gas station and fill it up.
+Here is the gas container I use.  Go to the gas station and fill it up.
 This one holds 1 1/4 gallons of gas.  For this guide, we will
 assume a full container, but you can also use partially filled
 containers as long as you can estimate the amount of gas in the container.
