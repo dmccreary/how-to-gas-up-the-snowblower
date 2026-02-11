@@ -22,7 +22,7 @@ containers as long as you can estimate the amount of gas in the container.
 Use this MicroSim to calculate how much two-cycle oil to add for a given
 amount of gas and a target ratio.
 
-<iframe src="sims/gas-oil-mix/main.html" height="482px" width="100%" scrolling="no"></iframe>
+<iframe src="sims/gas-oil-mix/main.html" height="512px" width="100%" scrolling="no"></iframe>
 
 ## Gas Cap on the Snowblower
 

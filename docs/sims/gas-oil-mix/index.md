@@ -31,7 +31,7 @@ This MicroSim helps learners calculate how much two-cycle oil to add for a given
 
 ```html
 <iframe src="main.html"
-        height="482px"
+        height="512px"
         width="100%"
         scrolling="no"></iframe>
 ```
