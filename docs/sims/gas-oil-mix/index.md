@@ -11,7 +11,7 @@ quality_score: 85
 
 # Gas and Oil Mix Calculator
 
-<iframe src="main.html" height="482px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="512px" width="100%" scrolling="no"></iframe>
 
 [Run the Gas and Oil Mix Calculator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

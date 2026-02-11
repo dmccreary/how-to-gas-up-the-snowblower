@@ -38,3 +38,13 @@ that it indicates that the proper mixture is 50 to 1.
 This is a photo of the two cycle oil bottle.  Some have a transparent part on the side to show you how much is in the bottle.  Ours does not have this.
 
 ## How to Measure the Oil
+
+![](./img/oil-in-measuring-glass.jpg)
+
+Here I am measuring the oil in the glass beaker and I have about 3.5 ounces.  This is just a fraction more than I needed.
+
+## Label on Gas Can
+
+![](./img/gas-can-with-label.jpg)
+
+Note the label on the gas can.  You should never store pure gas unmixed with oil in this container.

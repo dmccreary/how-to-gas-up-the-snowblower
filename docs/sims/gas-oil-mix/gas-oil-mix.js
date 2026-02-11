@@ -5,7 +5,7 @@
 let containerWidth; // calculated by container upon init and changed on resize
 let canvasWidth = 400;
 let drawHeight = 400;
-let controlHeight = 80; // 2 rows x 35 + 10
+let controlHeight = 110; // 2 rows x 35 + 30 for tick labels
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 
@@ -21,6 +21,7 @@ let ratioSlider;
 // constants
 const GALLON_TO_OZ = 128;
 const OZ_TO_ML = 29.5735;
+const RATIO_OPTIONS = [32, 40, 50];
 
 function setup() {
   updateCanvasSize();
@@ -30,12 +31,12 @@ function setup() {
 
   textSize(defaultTextSize);
 
-  gasSlider = createSlider(0.25, 5.0, 1.25, 0.05);
+  gasSlider = createSlider(1.0, 5.0, 1.25, 0.25);
   gasSlider.position(sliderLeftMargin, drawHeight + 5);
   gasSlider.size(canvasWidth - sliderLeftMargin - margin);
 
-  ratioSlider = createSlider(25, 80, 50, 1);
-  ratioSlider.position(sliderLeftMargin, drawHeight + 40);
+  ratioSlider = createSlider(0, RATIO_OPTIONS.length - 1, 2, 1);
+  ratioSlider.position(sliderLeftMargin, drawHeight + 45);
   ratioSlider.size(canvasWidth - sliderLeftMargin - margin);
 
   describe('Interactive calculator for two-cycle fuel mix with sliders for gas amount and gas-to-oil ratio', LABEL);
@@ -55,7 +56,7 @@ function draw() {
 
   // values
   const gasGallons = gasSlider.value();
-  const ratio = ratioSlider.value();
+  const ratio = RATIO_OPTIONS[ratioSlider.value()];
   const oilOz = (gasGallons * GALLON_TO_OZ) / ratio;
   const oilMl = oilOz * OZ_TO_ML;
   const oilTbsp = oilOz * 2;
@@ -116,6 +117,23 @@ function draw() {
   textSize(defaultTextSize);
   text('Gas (gal): ' + gasGallons.toFixed(2), 20, drawHeight + 15);
   text('Ratio (gas:oil): ' + ratio + ':1', 20, drawHeight + 50);
+
+  // ratio ticks and labels
+  const sliderWidth = canvasWidth - sliderLeftMargin - margin;
+  const tickY = drawHeight + 78;
+  const labelY = drawHeight + 90;
+  stroke('gray');
+  strokeWeight(1);
+  for (let i = 0; i < RATIO_OPTIONS.length; i++) {
+    const x = sliderLeftMargin + (sliderWidth * i) / (RATIO_OPTIONS.length - 1);
+    line(x, tickY - 6, x, tickY);
+    noStroke();
+    fill('black');
+    textAlign(CENTER, TOP);
+    textSize(12);
+    text(RATIO_OPTIONS[i] + ':1', x, labelY);
+    stroke('gray');
+  }
 }
 
 function windowResized() {
